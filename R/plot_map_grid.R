@@ -70,7 +70,6 @@ plot_map_grid <- function(map_sp_path=NULL,
             col=map_col, fill=TRUE,
             border=map_border_col, lwd=0.2,
             add=TRUE)
-        return(map_sp=map_poly)
     }
 
     ## Check if there is any grids shapefiles
@@ -79,16 +78,16 @@ plot_map_grid <- function(map_sp_path=NULL,
     } else {
         grids <- rgdal::readOGR(dsn=grids_sp_path)
         if (is.null(grids_col)) {
-            palette(rainbow(length(unique(grids[[grids_col_var]]))))
+            var <- grids[[grids_col_var]]
+            palette(rainbow(length(unique(var))))
         } else {
             palette(grids_col)
         }
 
         map(grids,
-            col=grids_col_var, fill=TRUE,
+            col=var, fill=TRUE,
             border=grids_border_col, lwd=0.2,
             add=TRUE)
-        return(grids_sp=grids)
     }
     box()
     degAxis(1, font=2)
