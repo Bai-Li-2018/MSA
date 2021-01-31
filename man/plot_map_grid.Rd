@@ -29,6 +29,8 @@ plot_map_grid(
 
 \item{grids_col_var}{A variable to be used to plot strata (e.g., depth or longitudinal regions) with different colors.}
 
+\item{grids_col}{A color palette to be used to plot strata (e.g., depth or longitudinal regions).}
+
 \item{xlim}{Numeric vectors of length 2, giving the longitude range.}
 
 \item{ylim}{Numeric vectors of length 2, giving the latitude range.}
@@ -52,7 +54,7 @@ plot_map_grid(
 \item{legend_title}{A character string to appear at the top of the legend.}
 }
 \value{
-
+A map of study area and sampling grids
 }
 \description{
 Plot map of study area and sampling grids

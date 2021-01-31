@@ -21,7 +21,7 @@ add_stations(
 \item{points_cex}{A numeric value giving the size of points}
 }
 \value{
-
+A map with smapling stations
 }
 \description{
 Add sampling stations

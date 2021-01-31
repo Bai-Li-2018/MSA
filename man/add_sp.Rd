@@ -14,7 +14,7 @@ add_sp(sp_path = NULL, col = NULL, border_col = NULL)
 \item{border_col}{A color for border of added shapefile.}
 }
 \value{
-
+A map with other added shapefiles
 }
 \description{
 Add shapefiles on map of study area
