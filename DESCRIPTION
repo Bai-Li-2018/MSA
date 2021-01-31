@@ -7,13 +7,14 @@ Authors@R:
            role = c("aut", "cre"),
            email = "bai.li@maine.edu")
 Description: The Map of Study Area (MSA) is a R package that can plot map of study area, sampling grids, sampling stations.
-License: `use_gpl3_license()` 
+License: GPL-3 
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports:
-    maps (>= 1.7.18),
-    mapdata (>= 3.7-5),
+    maps (>= 2.0-7),
+    mapdata (>= 2.3),
     rgdal (>= 0.4.1),
-    grDevices
+    grDevices,
+    sp
