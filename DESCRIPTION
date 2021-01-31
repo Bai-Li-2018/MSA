@@ -1,0 +1,19 @@
+Package: MSA
+Title: Map of Study Area
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Bai",
+           family = "Li",
+           role = c("aut", "cre"),
+           email = "bai.li@maine.edu")
+Description: The Map of Study Area (MSA) is a R package that can plot map of study area, sampling grids, sampling stations.
+License: `use_gpl3_license()` 
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports:
+    maps (>= 1.7.18),
+    mapdate (>= 3.7-5),
+    regal (>= 0.4.1),
+    grDevices
