@@ -41,7 +41,7 @@ add_stations(stations_x=stations$START_LONGITUDE, stations_y=stations$START_LATI
 ```
 ![alt text](inst/extdata/MSA.png "Map of study area.")
 
-## Acknowledgement
+## Acknowledgements
 - All the shapefiles and coordinates of stations are stored in inst/extdata folder.
 - ME_clip_NAD83 files are provided by Dr. Jie Cao 
 - grids2007 and trawl_survey_regions are provided by Maine Department of Marine Resources (Maine DMR)
