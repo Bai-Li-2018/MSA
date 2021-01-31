@@ -3,6 +3,7 @@
 #' @param map_sp_path Path of map shapefiles.
 #' @param grids_sp_path Path of sampling grids shapefiles.
 #' @param grids_col_var A variable to be used to plot strata (e.g., depth or longitudinal regions) with different colors.
+#' @param grids_col A color palette to be used to plot strata (e.g., depth or longitudinal regions).
 #' @param xlim Numeric vectors of length 2, giving the longitude range.
 #' @param ylim Numeric vectors of length 2, giving the latitude range.
 #' @param xlab A title for the x axis.
@@ -15,8 +16,14 @@
 #' @param legend A character vector to appear in the legend
 #' @param legend_title A character string to appear at the top of the legend.
 #'
+#' @import grDevices
+#' @import maps
+#' @import mapdata
+#' @import rgdal
+#' @import graphics
+#' @import sp
 #'
-#' @return
+#' @return A map of study area and sampling grids
 #'
 #' @export
 #'

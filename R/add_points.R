@@ -5,7 +5,9 @@
 #' @param col Color of sampling stations
 #' @param points_cex A numeric value giving the size of points
 #'
-#' @return
+#' @import graphics
+#'
+#' @return A map with smapling stations
 #'
 #' @export
 #'

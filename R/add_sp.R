@@ -4,8 +4,11 @@
 #' @param col A color for added shapefile.
 #' @param border_col A color for border of added shapefile.
 #'
+#' @import maps
+#' @import rgdal
+#' @import graphics
 #'
-#' @return
+#' @return A map with other added shapefiles
 #'
 #' @export
 #'
