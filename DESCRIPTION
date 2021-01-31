@@ -14,6 +14,6 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports:
     maps (>= 1.7.18),
-    mapdate (>= 3.7-5),
-    regal (>= 0.4.1),
+    mapdata (>= 3.7-5),
+    rgdal (>= 0.4.1),
     grDevices
