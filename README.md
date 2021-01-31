@@ -25,7 +25,6 @@ plot_map_grid(map_sp_path = system.file("extdata", "shapefiles", "ME_clip_NAD83.
               xlim=c(-70.8, -67), 
               ylim=c(42.5, 44.8),
               grids_col_var="DEPTH_S",
-              grids_col=NULL,
               legend_x = -69, legend_y=43.5,
               legend=c("[5-20]", "[21-35]", "[36-55]", ">56"),
               legend_title = "Depth Strata (Fathom)")
