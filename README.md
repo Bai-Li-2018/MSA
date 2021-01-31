@@ -2,21 +2,21 @@
 Map of study area
 
 ## Installation
-First, install the "remotes" package from CRAN
+Install the "remotes" package from CRAN:
 
 ```
  install.packages("remotes")
  library("remotes")
 ```
 
-Next, please install the MSA package from this GitHub repository using a function in the "remotes" package. 
+Please install the MSA package from this GitHub repository using a function in the "remotes" package:
 
 ```
 remotes::install_github("Bai-Li-2018/MSA", dependencies = TRUE)
 library(MSA)
 ```
-
-Finally, please confirm that MSA is installed by running the simple example below:
+## Example
+Please confirm that MSA is installed by running the simple example below:
 
 ```
 ## Plot a map of study area with sampling grids
@@ -40,3 +40,9 @@ add_stations(stations_x=stations$START_LONGITUDE, stations_y=stations$START_LATI
 
 ```
 ![alt text](inst/extdata/MSA.png "Map of study area.")
+
+## Acknowledgement
+- All the shapefiles and coordinates of stations are stored in inst/extdata folder.
+- ME_clip_NAD83 files are provided by Dr. Jie Cao 
+- grids2007 and trawl_survey_regions are provided by Maine Department of Marine Resources (Maine DMR)
+- stations.csv contains randomly selected stations from Maine DMR Bottom Trawl Survey
