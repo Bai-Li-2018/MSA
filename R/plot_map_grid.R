@@ -77,8 +77,8 @@ plot_map_grid <- function(map_sp_path=NULL,
         warning("There is no shapefile for plotting sampling grids.")
     } else {
         grids <- rgdal::readOGR(dsn=grids_sp_path)
+        var <- grids[[grids_col_var]]
         if (is.null(grids_col)) {
-            var <- grids[[grids_col_var]]
             palette(rainbow(length(unique(var))))
         } else {
             palette(grids_col)
