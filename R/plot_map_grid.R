@@ -34,7 +34,7 @@
 plot_map_grid <- function(map_sp_path=NULL,
                           grids_sp_path=NULL,
                           grids_col_var=NULL,
-                          grids_col=NULL,
+                          grids_col=rainbow(1),
                           xlim=NULL,
                           ylim=NULL,
                           xlab="Longitude",
@@ -77,10 +77,14 @@ plot_map_grid <- function(map_sp_path=NULL,
         warning("There is no shapefile for plotting sampling grids.")
     } else {
         grids <- rgdal::readOGR(dsn=grids_sp_path)
-        var <- grids[[grids_col_var]]
-        if (is.null(grids_col)) {
-            palette(rainbow(length(unique(var))))
+
+        if (is.null(grids_col_var)) {
+            map(grids,
+                col=grids_col, fill=TRUE,
+                border=grids_border_col, lwd=0.2,
+                add=TRUE)
         } else {
+            var <- grids[[grids_col_var]]
             palette(grids_col)
         }
 
