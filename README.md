@@ -16,7 +16,8 @@ remotes::install_github("Bai-Li-2018/MSA", dependencies = TRUE)
 library(MSA)
 ```
 ## Example
-Please confirm that MSA is installed by running the simple example below:
+Please confirm that MSA is installed by running the simple example below. 
+Please install and library mapdata package if you get an error (e.g., 'worldHiresMapEnv' is not an exported object from 'namespace:maps') when map_sp_path=NULL.
 
 ```
 ## Plot a map of study area with sampling grids
