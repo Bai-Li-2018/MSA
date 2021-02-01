@@ -25,6 +25,7 @@ plot_map_grid(map_sp_path = system.file("extdata", "shapefiles", "ME_clip_NAD83.
               xlim=c(-70.8, -67), 
               ylim=c(42.5, 44.8),
               grids_col_var="DEPTH_S",
+              grids_col=rainbow(4),
               legend_x = -69, legend_y=43.5,
               legend=c("[5-20]", "[21-35]", "[36-55]", ">56"),
               legend_title = "Depth Strata (Fathom)")
@@ -35,8 +36,9 @@ add_sp(sp_path=system.file("extdata", "shapefiles", "trawl_survey_regions.shp", 
 
 ## Add sampling stations
 stations <- read.csv(system.file("extdata", "stations.csv", package="MSA"))
-add_stations(stations_x=stations$START_LONGITUDE, stations_y=stations$START_LATITUDE, col="black", points_cex=0.3)
-
+add_stations(stations_x=stations$START_LONGITUDE, 
+             stations_y=stations$START_LATITUDE, 
+             col="black", points_cex=0.3)
 ```
 ![alt text](inst/extdata/MSA.png "Map of study area.")
 
