@@ -8,7 +8,7 @@ plot_map_grid(
   map_sp_path = NULL,
   grids_sp_path = NULL,
   grids_col_var = NULL,
-  grids_col = NULL,
+  grids_col = rainbow(1),
   xlim = NULL,
   ylim = NULL,
   xlab = "Longitude",
